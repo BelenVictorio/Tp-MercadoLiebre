@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--Amarillo);
+    height: 400px;
+    width: 100%;
+}
+header img {
+    width: 130px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.menu1 {
+    margin-top: 20px;
+}
+
+ul.menu2 {
+    margin-top: 20px;
+}
+
+.search {
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+button {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+p.primer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+p, a, h3, h4 {
+    font-family: 'Roboto';
+}
+
+p, a {
+    font-size: 12px;
+}
+
+p.precio {
+    font-size: 18px;
+}
+
+p.descuento, h4 {
+    font-size: 16px;
+}
