@@ -10,8 +10,8 @@ header {
 }
 header img {
     width: 130px;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 30px 30px;
+    margin-bottom: 10px;
 
 }
 
@@ -29,19 +29,17 @@ ul.menu2 {
 }
 
 .search {
-    margin-top: 10px;
     margin-left: 20px;
 
 }
 
-button {
-    margin-top: 5px;
-    margin-left: 20px;
+button.lupa {
+    margin: 2px 20px;
 }
 
 p.primer {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 30px;
     font-size: 12px;
 }
 
@@ -59,4 +57,16 @@ p.precio {
 
 p.descuento, h4 {
     font-size: 16px;
+}
+
+header div button.menu {
+    background: var(--Celeste);
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+button.menu i {
+    font-size: 30px;
+    color: var(--GrisClaro);
+    
 }
