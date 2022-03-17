@@ -3,47 +3,9 @@
     padding: 0;
 }
 
-header {
-    background-color: var(--Amarillo);
-    height: 400px;
-    width: 100%;
-}
-header img {
-    width: 130px;
-    margin: 30px 30px;
-    margin-bottom: 10px;
+/* Tipografía general */
 
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-ul.menu1 {
-    margin-top: 20px;
-}
-
-ul.menu2 {
-    margin-top: 20px;
-}
-
-.search {
-    margin-left: 20px;
-
-}
-
-button.lupa {
-    margin: 2px 20px;
-}
-
-p.primer {
-    text-align: center;
-    margin: 10px 30px;
-    font-size: 12px;
-}
-
-p, a, h3, h4 {
+body {
     font-family: 'Roboto';
 }
 
@@ -59,14 +21,73 @@ p.descuento, h4 {
     font-size: 16px;
 }
 
-header div button.menu {
-    background: var(--Celeste);
-    padding: 8px 10px;
-    border-radius: 10px;
+h3 {
+    font-size: 24px;
 }
 
-button.menu i {
-    font-size: 30px;
+/* header */
+
+header {
+    background-color: var(--Amarillo);
+    height: 400px;
+    width: 100%;
+}
+header img {
+    width: 130px;
+    margin: 30px 30px;
+    margin-bottom: 10px;
+    
+
+}
+
+/* header-div */
+
+button.lupa {
+    margin: 2px 20px;
+}
+
+div.search {
+    margin-left: 20px;
+
+}
+
+p.primer {
+    text-align: center;
+    margin: 10px 30px;
+    font-size: 12px;
+}
+
+/* header-nav */
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.menu1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul.menu2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Botón menu final */
+
+
+div.burger-menu {
+    background-color: var(--Celeste);
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin: 25px 140px 25px 140px;
+}
+
+div.burger-menu i {
     color: var(--GrisClaro);
+    font-size: 25px;
     
 }
+
