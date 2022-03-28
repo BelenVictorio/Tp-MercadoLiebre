@@ -10,25 +10,26 @@ body {
 }
 
 p, a {
-    font-size: 12px;
+    font-size: var(--cuerpoTexto);
 }
 
 p.precio {
-    font-size: 18px;
+    font-size: var(--precio);
 }
 
 p.descuento, h4 {
-    font-size: 16px;
+    font-size: var(--descuentosDescripciones);
 }
 
 h3 {
-    font-size: 24px;
+    font-size: var(--titulares);
 }
 
 /* header */
 
 header {
     background-color: var(--Amarillo);
+    background-size: cover;
     height: 400px;
     width: 100%;
 }
@@ -43,7 +44,7 @@ header img {
 /* header-div */
 
 button.lupa {
-    margin: 2px 20px;
+    margin: 1px;
 }
 
 div.search {

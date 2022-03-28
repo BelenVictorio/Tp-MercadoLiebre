@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
+.banner {
+   width: 100%; 
+
+}
+
+.ultima-visita img {
+    width: 100%;
+
+}
+
+.ofertas img {
+    width: 100%;
+}
+
+article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.articulo {
+    background-color: white;
+    border-top: solid 1px  #ebebeb;
+    padding: 15px;
+}
+
+.descuento {
+    color: var(--Verde);
+    font-size: var(--des);
+}
+
+.descripcion {
+    font-size: var(--des);
+    color: var(--GrisOscuro);
+}
+
+.articulo i {
+    color: var(--Verde);
+    padding: 10px;
+    border: 1px solid var(--Verde);
+    border-radius: 50%;
+    width: 20px;
+}
