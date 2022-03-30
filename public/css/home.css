@@ -17,6 +17,10 @@ main {
 
 }
 
+h3 {
+    color: var(--GrisOscuro);
+}
+
 .ultima-visita img {
     width: 100%;
 
@@ -34,7 +38,6 @@ article {
 .articulo {
     background-color: white;
     border-top: solid 1px  #ebebeb;
-    padding: 15px;
 }
 
 .descuento {
@@ -53,4 +56,29 @@ article {
     border: 1px solid var(--Verde);
     border-radius: 50%;
     width: 20px;
+}
+
+.detalle {
+    padding: 15px;
+    border-top: solid 1px #ebebeb;
+}
+
+/* smartphone */
+
+@media (max-width:425px) {
+
+    .descripcion {
+        display: none;
+    }
+}
+
+/* tablet-Desktop */
+
+@media (min-width:425px) {
+    
+    .articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);   
+    }
+
+
 }

@@ -30,8 +30,9 @@ h3 {
 header {
     background-color: var(--Amarillo);
     background-size: cover;
-    height: 400px;
+    /* height: 400px; */
     width: 100%;
+
 }
 header img {
     width: 130px;
@@ -77,6 +78,11 @@ ul.menu2 {
 
 /* Botón menu final */
 
+.burger {
+    display: flex;
+    justify-content: center;
+}
+
 
 div.burger-menu {
     background-color: var(--Celeste);
@@ -84,11 +90,29 @@ div.burger-menu {
     padding: 8px 10px;
     border-radius: 5px;
     margin: 25px 140px 25px 140px;
+    
 }
 
 div.burger-menu i {
     color: var(--GrisClaro);
     font-size: 25px;
-    
 }
 
+/* smartphone */
+
+@media (max-width:425px) {
+
+    .menu1, .menu2 {
+        display: none;
+    }
+}
+
+/* Tablet-Desktop */
+
+@media (min-width:425px) {
+    
+    .burger {
+        display: none;
+    }
+
+}
