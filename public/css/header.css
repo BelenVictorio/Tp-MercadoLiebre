@@ -1,7 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 /* Tipografía general */
 
@@ -30,8 +26,8 @@ h3 {
 header {
     background-color: var(--Amarillo);
     background-size: cover;
-    /* height: 400px; */
     width: 100%;
+    padding: 20px 0;
 
 }
 header img {
@@ -69,28 +65,25 @@ header nav ul li a {
 ul.menu1 {
     margin-top: 10px;
     margin-bottom: 10px;
+    display: none;
 }
 
 ul.menu2 {
     margin-top: 10px;
     margin-bottom: 10px;
+    display: none;
 }
 
 /* Botón menu final */
 
-.burger {
-    display: flex;
-    justify-content: center;
-}
-
-
-div.burger-menu {
+.burger-menu {
     background-color: var(--Celeste);
-    display: inline-block;
-    padding: 8px 10px;
+    display: block;
+    padding: 8px;
     border-radius: 5px;
-    margin: 25px 140px 25px 140px;
-    
+    margin: 0 auto;
+    text-align: center;
+    width: 25px;
 }
 
 div.burger-menu i {
@@ -98,21 +91,28 @@ div.burger-menu i {
     font-size: 25px;
 }
 
-/* smartphone */
+/* tablet */
 
-@media (max-width:425px) {
+@media (min-width: 425px) {
 
-    .menu1, .menu2 {
+    .burger-menu {
         display: none;
     }
+
+    ul.menu1 {
+        display:block;
+    }
+    
+    ul.menu2 {
+        display: block;
+    }
+
 }
 
-/* Tablet-Desktop */
+/* Desktop */
 
-@media (min-width:425px) {
+@media (min-width:768px) {
     
-    .burger {
-        display: none;
-    }
+    
 
 }
