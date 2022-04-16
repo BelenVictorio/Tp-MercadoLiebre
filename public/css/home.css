@@ -6,7 +6,55 @@ body {
 main {
     margin: 0 auto;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+main .ultima-visita .articulo_1 i,
+main .ultima-visita .articulo_2 i,
+main .ultima-visita .articulo_3 i, 
+main .ultima-visita .articulo_4 i {
+    color: var(--Verde);
+    display: block; 
+    font-size: 16px; 
+    padding: 5px; 
+    width: 30px; 
+    height: 30px; 
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius:50%; 
+    position: absolute;
+    right: -251px;
+    top: -30px;
+}
+
+.camion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: flex-start;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+main .ofertas .articulo_1 i,
+main .ofertas .articulo_2 i,
+main .ofertas .articulo_3 i, 
+main .ofertas .articulo_4 i {
+    color: var(--Verde);
+    display: block; 
+    font-size: 16px; 
+    padding: 5px; 
+    width: 30px; 
+    height: 30px; 
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius:50%; 
+    position: absolute;
+    right: -251px;
+    top: -30px;
+}
+
 
 h3 {
     color: var(--GrisOscuro);
@@ -26,7 +74,10 @@ article {
     margin-bottom: 10px;
 }
 
-.articulo {
+.articulo_1,
+.articulo_2,
+.articulo_3,
+.articulo_4 {
     background-color: white;
     border-top: solid 1px  #ebebeb;
 }
@@ -42,42 +93,129 @@ article {
     display: none;
 }
 
-.articulo i {
-    color: var(--Verde);
-    padding: 10px;
-    border: 1px solid var(--Verde);
-    border-radius: 50%;
-    width: 20px;
-}
-
-.detalle {
+main .detalle {
     padding: 15px;
     border-top: solid 1px #ebebeb;
+    display: flex;
+    align-items: center;
+}
+
+.detalle .precio {
+   width: 30%;
+}
+
+.detalle .descuento {
+    width: 70%;
 }
 
 .banner {
     display: none;
 }
 
+main .ultima-visita, 
+main .ofertas {
+    display: flex;
+    flex-direction: column;
+    
+}
    
 /* tablet */
 
-@media (min-width:425px) {
+@media (min-width:426px) {
     
-    .articulo {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);   
+    .articulo_1, 
+    .articulo_2, 
+    .articulo_3, 
+    .articulo_4 {
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        width: 40%;
+
     }
 
     .banner {
         display: block;
     }
 
+    main .ultima-visita, main .ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    h3 {
+        color: var(--GrisOscuro);
+        width: 100%;
+        text-align: center;
+    }
+
+    .descripcion {
+        display: inline;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    main .detalle {
+        padding: 15px;
+        border-top: solid 1px #ebebeb;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .detalle .descuento {
+        text-align: center;
+    }
+
+
 }
 
 /* Desktop */
 
-@media (min-width:769px) {
+@media (min-width:1024px) {
     
+    main .ultima-visita, main .ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .articulo_1, .articulo_2, .articulo_3, .articulo_4 {
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        width: 20%;
+    }
+
+    main .ultima-visita .articulo_1 i, main .ultima-visita .articulo_2 i, main .ultima-visita .articulo_3 i, main .ultima-visita .articulo_4 i {
+        color: var(--Verde);
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: -160px;
+        top: -30px;
+    }
+
+    main .ofertas .articulo_1 i, main .ofertas .articulo_2 i, main .ofertas .articulo_3 i, main .ofertas .articulo_4 i {
+        color: var(--Verde);
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: -160px;
+        top: -30px;
+    }
     
 
 }
