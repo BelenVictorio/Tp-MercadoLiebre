@@ -25,23 +25,23 @@
 
         <form class="crear-formulario" action="" method="post">
             <div class="formulario">
-                <input type="text" placeholder="Nombre y Apellido" name="" id="">
+                <input type="text" placeholder="Nombre y Apellido" name="Nombre y Apellido" id="Nombre y Apellido" required minlength="3">
             </div>
             <div class="formulario">
-                <input type="text" placeholder="Nombre de usuario" name="" id="">
+                <input type="text" placeholder="Nombre de usuario" name="Nombre de Usuario" id="Nombre de Usuario" required minlength="3">
             </div>
             <div class="formulario">
-                <input type="email" placeholder="email" name="" id="">
+                <input type="email" placeholder="email" name="email" id="email" required>
             </div>
             <div class="formulario">
-                <label for="">Fecha de Nacimiento</label>
-                <input type="date" name="" id="">
+                <label for="date" required >Fecha de Nacimiento</label>
+                <input type="date" name="" id="date">
             </div>
             <div class="formulario">
-                <input type="text" placeholder="Domicilio" name="" id="">
+                <input type="text" placeholder="Domicilio" name="Domicilio" id="Domicilio" required>
             </div>
             <div class="formulario">
-                <label for="">Perfil del usuario</label>
+                <label for="user">Perfil del usuario</label>
                 <input type="radio"  name="" id="">Comprador
                 <input type="radio" name="" id="">Vendedor</input>
             </div>
@@ -54,14 +54,15 @@
                 <input type="checkbox" name="" id="">Vida sana
             </div>
             <div class="formulario">
-                <input type="password" placeholder="Contraseña" name="" id="">
+                <input type="password" placeholder="Contraseña" name="" id="" required minlength="4">
             </div>
             <div class="formulario">
-                <input type="password" placeholder="Confirmar contraseña">
+                <input type="password" placeholder="Confirmar contraseña" required minlength="4">
             </div>
 
             <button class="boton-formulario" type="reset">Borrar</button>
-            <button class="boton-formulario" type="submit"><a href="/"> Enviar</a></button>
+            <!-- <button class="boton-formulario" type="submit"><a href="/"> Enviar</a></button> -->
+            <button class="boton-formulario" type="submit"> Enviar</button>
         </form>
     </section>
 
