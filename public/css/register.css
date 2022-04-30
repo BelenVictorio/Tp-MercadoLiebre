@@ -1,0 +1,74 @@
+.body__register {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-image: url('/images/Login-rafiki.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    backdrop-filter: blur(4px);
+    
+}
+
+.container {
+    background-color: rgba(50, 58, 5, 0.2);
+    max-width: 700px;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.container .titulo {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--Azul);
+}
+
+.register__usuario {
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.register__usuario i {
+    font-size: 150px;
+    width: 100%;
+    text-align: center;
+    color: var(--Azul);
+}
+
+ .crear-formulario {
+     padding: 20px 15px;
+     text-align: center;
+ }
+  
+.formulario {
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+
+}
+
+
+.boton-formulario {
+    background-color: var(--Celeste);
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+}

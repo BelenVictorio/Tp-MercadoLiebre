@@ -3,7 +3,7 @@ body {
     background-color: #ebebeb;
 }
 
-main {
+main .main__home {
     margin: 0 auto;
     width: 90%;
     display: flex;
