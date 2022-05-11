@@ -1,4 +1,4 @@
-
+ 
 body {
     background-color: #ebebeb;
 }
@@ -10,22 +10,33 @@ main .main__home {
     flex-wrap: wrap;
 }
 
+
 main .ultima-visita .articulo_1 i,
 main .ultima-visita .articulo_2 i,
 main .ultima-visita .articulo_3 i, 
 main .ultima-visita .articulo_4 i {
     color: var(--Verde);
-    display: block; 
-    font-size: 16px; 
-    padding: 5px; 
-    width: 30px; 
-    height: 30px; 
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #39b54a;
     background-color: #FFF;
-    border-radius:50%; 
+    border-radius: 50%;
     position: absolute;
-    right: -251px;
-    top: -30px;
+    right: 20px;
+    top: -15px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+main .ultima-visita .articulo_1 i:hover,
+main .ultima-visita .articulo_2 i:hover,
+main .ultima-visita .articulo_3 i:hover, 
+main .ultima-visita .articulo_4 i:hover {
+
+    transform: rotateZ(-90deg);
+
 }
 
 .camion{
@@ -33,7 +44,6 @@ main .ultima-visita .articulo_4 i {
     flex-direction: row;
     justify-content: flex-end;
     justify-items: flex-start;
-    position: relative;
     margin-bottom: 20px;
 }
 
@@ -51,8 +61,18 @@ main .ofertas .articulo_4 i {
     background-color: #FFF;
     border-radius:50%; 
     position: absolute;
-    right: -251px;
-    top: -30px;
+    right: 20px;
+    top: -15px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+main .ofertas .articulo_1 i:hover,
+main .ofertas .articulo_2 i:hover,
+main .ofertas .articulo_3 i:hover, 
+main .ofertas .articulo_4 i:hover {
+
+    transform: rotateZ(-90deg);
+
 }
 
 
@@ -80,6 +100,7 @@ article {
 .articulo_4 {
     background-color: white;
     border-top: solid 1px  #ebebeb;
+    
 }
 
 .descuento {
@@ -98,6 +119,7 @@ main .detalle {
     border-top: solid 1px #ebebeb;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .detalle .precio {
@@ -129,6 +151,7 @@ main .ofertas {
     .articulo_4 {
         box-shadow: 0px 0px 10px rgb(100 100 100);
         width: 40%;
+        
 
     }
 
@@ -185,6 +208,7 @@ main .ofertas {
     .articulo_1, .articulo_2, .articulo_3, .articulo_4 {
         box-shadow: 0px 0px 10px rgb(100 100 100);
         width: 20%;
+        
     }
 
     main .ultima-visita .articulo_1 i, main .ultima-visita .articulo_2 i, main .ultima-visita .articulo_3 i, main .ultima-visita .articulo_4 i {
@@ -198,8 +222,8 @@ main .ofertas {
         background-color: #FFF;
         border-radius: 50%;
         position: absolute;
-        right: -160px;
-        top: -30px;
+        right: 20px;
+        top: -15px;
     }
 
     main .ofertas .articulo_1 i, main .ofertas .articulo_2 i, main .ofertas .articulo_3 i, main .ofertas .articulo_4 i {
@@ -213,8 +237,8 @@ main .ofertas {
         background-color: #FFF;
         border-radius: 50%;
         position: absolute;
-        right: -160px;
-        top: -30px;
+        right: 20px;
+        top: -15px;
     }
     
 
